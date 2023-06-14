@@ -1,0 +1,349 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #11161A;
+  font-family: 'Cairo';
+}
+
+/* start nav */
+.nav {
+  height: 88px;
+  line-height: 1.5;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav .container .logo {
+  font-size: 40px;
+  font-weight: 500px;
+  text-decoration: none;
+  color: #ccc;
+  margin-right: 25px;
+  position: relative;
+  top: 10px;
+}
+
+.nav .container .logo img {
+  width: 186px;
+}
+
+.nav .container .links {
+  display: inline;
+  position: relative;
+  top: -11px;
+}
+
+.nav .container .links a:hover {
+  color: #ff4136;;
+}
+
+.nav .container .nav-links {
+  margin-right: 110px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #ccc;
+
+}
+
+.nav .container .search {
+  width: 200px;
+  margin-right: 80px;
+  height: 40px;
+  border: 3px solid #dcdcdce0;
+  border-radius: 20px;
+  background-color: #11161A;
+  font-size: large;
+  color: #ccc;
+  padding: 13px;
+}
+
+/* end nav */
+
+.main-img {
+  margin-top: 14px;
+  background-image: url("https://assets.cdn.ifixit.com/static/images/home/search-hero-backgrounds/moto_g5_plus_2.jpg");
+  background-size: cover;
+  height: 400px;
+}
+
+.main-img .overflow {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #000000bf;
+}
+
+.main-img .right {
+  position: relative;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  color: #dcdcdcbd;
+}
+
+.main-img .right .text {
+  position: relative;
+  top: 40px;
+  font-size: 28px;
+}
+
+.main-img .left {
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+}
+
+.main-img .left img {
+  width: 36rem;
+  position: relative;
+  top: 82px;
+
+}
+
+/* end paragraph */
+
+.divisions {
+  font-size: xx-large;
+  color: #ccc;
+  font-weight: bolder;
+  width: fit-content;
+  position: absolute;
+  right: 100px;
+  text-align: center;
+  
+}
+
+/* Start Categories */
+
+.categories {
+  margin-bottom: 50px;
+  background: #18252c;
+  padding-top: 3px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.categories button {
+  background-color: #11161A;
+  border: none;
+  border-radius: 20px;
+  padding-left: 10px;
+  text-align: center;
+  font-size: 45px;
+  /* text-transform: uppercase; */
+  color: #b1aeae;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  cursor: pointer;
+  font-family: 'Cairo';
+}
+
+.categories button:hover {
+  border: 1px solid #ff4136;
+}
+
+.categories .category-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categories .category-list ul {
+  list-style: none;
+}
+
+.categories .category-list ul li {
+  display: inline;
+
+}
+
+.categories .category-list .category-item {
+  height: 450px;
+  width: 400px;
+  border: 1px solid silver;
+  border-radius: 10%;
+  position: relative;
+  text-align: center;
+}
+
+.categories .category-list .category-item .category-image {
+  width: 100%;
+  height: 100px;
+}
+
+.categories .category-list .category-item .category-image img {
+  width: 100%;
+  border-top-left-radius: 11%;
+  height: 338px;
+  border-top-right-radius: 11%;
+  opacity: 0.4;
+}
+
+.categories .category-list .category-item .category-image img:hover {
+  opacity: 1;
+}
+
+.categories .category-list .category-item .category-image img:hover .category-titl h3 {
+  color: #fff;
+}
+
+.categories .category-list .category-item .category-title {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 33px;
+  text-align: center;
+  color: #b1aeae;
+}
+
+/* END Categories */
+
+/* Start cards */
+.cards {
+  padding: 5rem 2rem;
+  background-color: #18252c;
+  align-items: center;
+  border-top: 1px solid #ccc;
+}
+
+.cards .all-cards .sec-pic {
+  padding: 10px;
+  background-color: #323b40;
+  color: #ffffff;
+  border: 0 solid #323b40;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 180px;
+  position: relative;
+  right: 345px;
+}
+
+/* .cards .dropdown .dropdown_menu .card-link {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+
+.cards .dropdown .dropdown_btn img {
+  border-radius: 20% 20% 20% 20%;
+}
+
+.dropdown {
+  position: relative;
+  z-index: 10;
+  display: inline-block;
+  right: 900px;
+}
+
+.cards .dropdown_btn {
+  display: inline-block;
+  padding: 10px;
+  background-color: #323b40;
+  color: #ffffff;
+  border: 0 solid #323b40;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 180px;
+}
+
+.cards .dropdown .dropdown_btn:hover {
+  background-color: #222222;
+}
+
+.dropdown_menu {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  min-width: 180px;
+  background-color: gray;
+  color: #323b40;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cards .dropdown:hover .dropdown_menu {
+  display: block;
+}
+
+.dropdown_menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  border-width: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cards .dropdown .dropdown_menu a:hover {
+  background-color: #037053;
+  color: #323b40;
+}
+
+.dropdown_title {
+  border-top: 1px solid #11161A;
+  border-bottom: 1px solid #11161A;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+} */
+
+/* End cards */
+
+/* Start footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  background-color: #11161A;
+}
+
+footer .right {
+  list-style: none;
+}
+
+footer .right li {
+  text-align: center;
+  font-size: 21px;
+  color: #fff;
+}
+
+footer .right li:first-child {
+  font-size: 44px;
+  color: #ff4136;
+}
+
+footer .middle {
+  font-size: 26px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+footer .left {
+  list-style: none;
+  margin-top: 55px;
+}
+
+footer .left li {
+  display: inline;
+}
+
+footer .left a {
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 7px;
+  padding: 15px;
+}
+
+footer .left li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* End Footer */

@@ -1,0 +1,132 @@
+body {
+  background-color: #11161A;
+  font-family: 'Cairo';
+}
+
+/* start nav */
+.nav {
+  height: 88px;
+  line-height: 1.5;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.nav .container .logo {
+  font-size: 40px;
+  font-weight: 500px;
+  text-decoration: none;
+  color: #ccc;
+  margin-right: 25px;
+  position: relative;
+  top: 10px;
+}
+
+.nav .container .logo img {
+  width: 186px;
+}
+
+.nav .container .links {
+  display: inline;
+  position: relative;
+  top: -11px;
+
+}
+
+.nav .container .links a:hover {
+  color:#ff4136;
+}
+
+.nav .container .nav-links {
+  margin-right: 110px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #ccc;
+}
+
+.nav .container .search {
+  width: 200px;
+  margin-right: 80px;
+  height: 40px;
+  border: 3px solid #dcdcdce0;
+  border-radius: 20px;
+  background-color: #11161A;
+  font-size: large;
+  color: #ccc;
+  padding: 13px;
+}
+
+/* end nav */
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* set a style for the main container */
+.main-container {
+  direction: rtl;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 700px;
+  color: #f5f7fa;
+  background-color: #18252c;
+}
+
+
+/* set a style for all buttons*/
+
+button {
+  background-color: #037053;
+  color: #ccc;
+  padding: 15px 20px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+/*set styles for the cancel button*/
+
+.cancelbtn {
+  padding: 15px 20px;
+  background-color: #037053;
+}
+
+/*float cancel and signup buttons and add an equal width*/
+
+.cancelbtn,
+.signupbtn {
+  float: left;
+  width: 100%;
+}
+
+/*add padding to container elements*/
+
+.container {
+  padding: 16px;
+}
+
+/*clear floats*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*styles for cancel button and signup button
+on extra small screens*/
+
+@media screen and (max-width: 300px) {
+
+  .cancelbtn,
+  .signupbtn {
+    width: 100%;
+  }
+}
